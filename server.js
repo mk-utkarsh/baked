@@ -6,9 +6,9 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const SECRET_KEY = crypto.randomBytes(32).toString('hex');
+const SECRET_KEY = crypto.randomBytes(32).toString('hex'); //This genuinely aint anything.
 
-const FLAG = process.env.FLAG || 'dbd{set_the_flag_env_var}';
+const FLAG = process.env.FLAG || 'dbd{set_the_flag_env_var}'; //frenzyyy
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
